@@ -29,7 +29,7 @@ app.use("/milestones", require("./routes/milestoneroutes"));
 
 // Home Route
 app.get("/", (req, res) => {
-  res.render("index");
+  res.render("layouts/main", { content: "index", milestones: [] });
 });
 
 // Server Listening

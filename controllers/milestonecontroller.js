@@ -4,7 +4,7 @@ const Milestone = require("../models/milestone");
 exports.getMilestones = async (req, res) => {
   try {
     const milestones = await Milestone.find();
-    res.render("milestones", { milestones });
+    res.render("layouts/main", { content: "milestones", milestones });
   } catch (err) {
     console.error(err);
     res.status(500).send("Server Error");
@@ -43,4 +43,5 @@ exports.deleteMilestone = async (req, res) => {
     res.status(500).send("Server Error");
   }
 };
+
 

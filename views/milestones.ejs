@@ -1,4 +1,3 @@
-<%- include("layouts/main") %>
 <h2>Milestones</h2>
 
 <form action="/milestones" method="POST" class="mb-4">
@@ -37,6 +36,7 @@
         <td><%= milestone.status %></td>
         <td>
           <form action="/milestones/<%= milestone._id %>?_method=PUT" method="POST" class="d-inline">
+            <input type="hidden" name="status" value="Complete">
             <button class="btn btn-primary btn-sm">Mark Complete</button>
           </form>
           <form action="/milestones/<%= milestone._id %>?_method=DELETE" method="POST" class="d-inline">
