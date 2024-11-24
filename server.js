@@ -24,14 +24,16 @@ mongoose
   .then(() => console.log("MongoDB Connected"))
   .catch((err) => console.error("Database connection error:", err));
 
-// Routes
 app.get("/", (req, res) => {
-  res.render("layouts/main", { content: "index" }); // For home page
+    console.log("Content variable:", "index");
+    res.render("layouts/main", { content: "index" });
 });
-
+  
 app.get("/milestones", (req, res) => {
-  res.render("layouts/main", { content: "milestones" }); // For milestones page
+    console.log("Content variable:", "milestones");
+    res.render("layouts/main", { content: "milestones" });
 });
+  
 
 // Start Server
 const PORT = process.env.PORT || 5000;
