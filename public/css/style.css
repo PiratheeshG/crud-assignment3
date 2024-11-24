@@ -1,49 +1,44 @@
 /* General Styles */
 body {
-    background-color: #f8f9fa; /* Light background */
-    color: #343a40; /* Dark text */
+    background-color: #f8f9fa;
+    color: #343a40;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
   }
   
-  h1, h2, h3 {
-    font-weight: bold;
-    color: #0056b3; /* Primary blue */
-    margin-bottom: 20px;
-  }
-  
-  /* Header Styles */
   header {
-    background-color: #007bff; /* Primary blue */
+    background-color: #007bff;
     color: white;
     padding: 1.5rem 0;
+    text-align: center;
   }
   
   header nav a {
-    color: #fff;
+    color: white;
     text-decoration: none;
-    font-size: 1.2rem;
     margin: 0 10px;
+    font-size: 1.2rem;
     padding: 5px 15px;
     border-radius: 5px;
   }
   
   header nav a:hover {
-    text-decoration: underline;
     background-color: #0056b3;
   }
   
-  /* Footer Styles */
   footer {
-    background-color: #343a40; /* Dark footer */
+    background-color: #343a40;
     color: white;
     text-align: center;
     padding: 1rem 0;
     margin-top: 20px;
   }
   
-  /* Buttons */
+  .container {
+    margin-top: 30px;
+  }
+  
   .btn-primary {
     background-color: #0056b3;
     border: none;
@@ -54,17 +49,11 @@ body {
   }
   
   .btn-light {
-    color: #0056b3;
     border: 1px solid #ddd;
   }
   
   .btn-light:hover {
     background-color: #f8f9fa;
-  }
-  
-  /* Main Content */
-  .container {
-    margin-top: 30px;
   }
   
   
