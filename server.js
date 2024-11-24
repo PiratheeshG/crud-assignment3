@@ -29,7 +29,7 @@ app.use("/milestones", require("./routes/milestone-routes"));
 
 // Home Route
 app.get("/", (req, res) => {
-  res.render("layouts/main", { content: "../index" }); // Pass correct path for index.ejs
+  res.render("layouts/main", { content: "index" }); // Correctly reference index.ejs
 });
 
 // Start Server
