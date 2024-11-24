@@ -24,16 +24,17 @@ mongoose
   .then(() => console.log("MongoDB Connected"))
   .catch((err) => console.error("Database connection error:", err));
 
-// Home Route
+// Routes
 app.get("/", (req, res) => {
-  res.render("index"); // Render home page directly
+  res.render("index"); // Render the home page
 });
 
-// Milestones Route
 app.get("/milestones", (req, res) => {
-  res.render("milestones"); // Render milestones page directly
+  res.render("milestones"); // Render the milestones page
 });
 
 // Start Server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
+app.use("/milestones", require("./routes/milestone-routes"));
