@@ -29,9 +29,9 @@ app.use("/milestones", require("./routes/milestone-routes"));
 
 // Home Route
 app.get("/", (req, res) => {
-  res.render("layouts/main", { content: "index" });
+  res.render("layouts/main", { content: "../index" }); // Pass correct path for index.ejs
 });
 
-// Server Listening
+// Start Server
 const PORT = process.env.port || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
