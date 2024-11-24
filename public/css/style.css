@@ -1,5 +1,5 @@
 body {
-    background-color: #f8f9fa; /* Light background */
+    background-color: lightblue; /* Test if this shows up */
     color: #343a40; /* Dark text */
   }
   
@@ -11,37 +11,5 @@ body {
   footer {
     background-color: #343a40; /* Dark footer */
     color: #fff;
-  }
-  
-  h1, h2 {
-    font-weight: bold;
-  }
-  
-  .card {
-    border-radius: 10px;
-    margin: 20px 0;
-  }
-  
-  .btn-primary {
-    background-color: #0056b3; /* Darker blue for buttons */
-    border: none;
-  }
-  
-  .table th, .table td {
-    vertical-align: middle;
-    text-align: center;
-  }
-  
-  .table th {
-    font-size: 1rem;
-  }
-  
-  input, button {
-    font-size: 1rem;
-    padding: 0.5rem;
-  }
-  
-  .container {
-    margin-top: 50px;
   }
   
