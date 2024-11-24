@@ -5,7 +5,7 @@ const {
   addMilestone,
   updateMilestone,
   deleteMilestone,
-} = require("../controllers/milestonecontroller");
+} = require("../controllers/milestoneontroller");
 
 // Routes
 router.get("/", getMilestones);

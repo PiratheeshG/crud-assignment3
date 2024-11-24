@@ -19,6 +19,7 @@ body {
   
   .card {
     border-radius: 10px;
+    margin: 20px 0;
   }
   
   .btn-primary {
@@ -38,5 +39,9 @@ body {
   input, button {
     font-size: 1rem;
     padding: 0.5rem;
+  }
+  
+  .container {
+    margin-top: 50px;
   }
   
