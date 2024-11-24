@@ -1,6 +1,6 @@
 const Milestone = require("../models/milestone");
 
-// GET all milestones
+// Get all milestones
 exports.getMilestones = async (req, res) => {
   try {
     const milestones = await Milestone.find();
@@ -43,5 +43,6 @@ exports.deleteMilestone = async (req, res) => {
     res.status(500).send("Server Error");
   }
 };
+
 
 

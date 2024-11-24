@@ -1,15 +1,28 @@
 body {
-    background-color: lightblue; /* Test if this shows up */
-    color: #343a40; /* Dark text */
+    background-color: lightblue;
+    color: #343a40;
   }
   
   header {
-    background-color: #007bff; /* Primary blue */
+    background-color: #007bff;
     color: #fff;
   }
   
   footer {
-    background-color: #343a40; /* Dark footer */
+    background-color: #343a40;
     color: #fff;
+  }
+  
+  h1, h2 {
+    font-weight: bold;
+  }
+  
+  .card {
+    border-radius: 10px;
+  }
+  
+  .btn-primary {
+    background-color: #0056b3;
+    border: none;
   }
   

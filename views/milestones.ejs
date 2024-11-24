@@ -1,4 +1,4 @@
-<h2 class="text-center mb-4" style="font-size: 2rem;">Milestones</h2>
+<h2 class="text-center mb-4">Milestones</h2>
 
 <div class="card shadow-lg border-0 p-4 mb-5">
   <form action="/milestones" method="POST">
@@ -39,7 +39,6 @@
           <td><%= milestone.status %></td>
           <td>
             <form action="/milestones/<%= milestone._id %>?_method=PUT" method="POST" class="d-inline">
-              <input type="hidden" name="status" value="Complete">
               <button class="btn btn-primary btn-sm">Complete</button>
             </form>
             <form action="/milestones/<%= milestone._id %>?_method=DELETE" method="POST" class="d-inline">
@@ -51,6 +50,7 @@
     </tbody>
   </table>
 </div>
+
 
 
 
