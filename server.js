@@ -25,11 +25,12 @@ mongoose
   .catch((err) => console.error("Database connection error:", err));
 
 // Routes
-app.use("/milestones", require("./routes/milestone-routes"));
-
-// Home Route
 app.get("/", (req, res) => {
-  res.render("layouts/main", { content: "index" });
+  res.render("layouts/main", { content: "index" }); // For home page
+});
+
+app.get("/milestones", (req, res) => {
+  res.render("layouts/main", { content: "milestones" }); // For milestones page
 });
 
 // Start Server

@@ -10,6 +10,7 @@ body {
   h1, h2, h3 {
     font-weight: bold;
     color: #0056b3; /* Primary blue */
+    margin-bottom: 20px;
   }
   
   /* Header Styles */
@@ -24,10 +25,13 @@ body {
     text-decoration: none;
     font-size: 1.2rem;
     margin: 0 10px;
+    padding: 5px 15px;
+    border-radius: 5px;
   }
   
   header nav a:hover {
     text-decoration: underline;
+    background-color: #0056b3;
   }
   
   /* Footer Styles */
@@ -37,18 +41,6 @@ body {
     text-align: center;
     padding: 1rem 0;
     margin-top: 20px;
-  }
-  
-  /* Card Styles */
-  .card {
-    border-radius: 10px;
-    margin: 20px auto;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .card-body {
-    padding: 20px;
-    background-color: #ffffff; /* White background */
   }
   
   /* Buttons */
@@ -61,62 +53,18 @@ body {
     background-color: #003f7f;
   }
   
-  .btn-success {
-    background-color: #28a745;
-    border: none;
+  .btn-light {
+    color: #0056b3;
+    border: 1px solid #ddd;
   }
   
-  .btn-success:hover {
-    background-color: #218838;
+  .btn-light:hover {
+    background-color: #f8f9fa;
   }
   
-  .btn-danger {
-    background-color: #dc3545;
-    border: none;
-  }
-  
-  .btn-danger:hover {
-    background-color: #bd2130;
-  }
-  
-  /* Form Styles */
-  form input,
-  form button {
-    font-size: 1rem;
-    padding: 0.5rem;
-    border-radius: 5px;
-  }
-  
-  form .form-control {
-    border: 1px solid #ced4da;
-  }
-  
-  form .form-control:focus {
-    border-color: #80bdff;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
-  }
-  
-  /* Table Styles */
-  .table {
-    width: 100%;
-    margin-bottom: 1rem;
-    background-color: #fff;
-  }
-  
-  .table th {
-    background-color: #007bff; /* Primary blue */
-    color: white;
-    text-align: center;
-    font-size: 1rem;
-  }
-  
-  .table td {
-    text-align: center;
-    vertical-align: middle;
-  }
-  
-  /* Spacing */
+  /* Main Content */
   .container {
     margin-top: 30px;
   }
+  
   
