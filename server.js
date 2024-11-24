@@ -29,7 +29,7 @@ app.get("/", (req, res) => {
   res.render("index"); // Render home page
 });
 
-app.use("/milestones", require("./routes/milestone-routes")); // Milestones routes
+app.use("/milestones", require("./routes/milestone-routes")); // Milestone routes
 
 // Start Server
 const PORT = process.env.PORT || 5000;
