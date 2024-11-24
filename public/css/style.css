@@ -1,58 +1,17 @@
-/* General Styles */
 body {
     background-color: #f8f9fa;
     color: #343a40;
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
   }
   
   header {
     background-color: #007bff;
     color: white;
-    padding: 1.5rem 0;
-    text-align: center;
-  }
-  
-  header nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-    font-size: 1.2rem;
-    padding: 5px 15px;
-    border-radius: 5px;
-  }
-  
-  header nav a:hover {
-    background-color: #0056b3;
   }
   
   footer {
     background-color: #343a40;
     color: white;
-    text-align: center;
-    padding: 1rem 0;
-    margin-top: 20px;
   }
   
-  .container {
-    margin-top: 30px;
-  }
-  
-  .btn-primary {
-    background-color: #0056b3;
-    border: none;
-  }
-  
-  .btn-primary:hover {
-    background-color: #003f7f;
-  }
-  
-  .btn-light {
-    border: 1px solid #ddd;
-  }
-  
-  .btn-light:hover {
-    background-color: #f8f9fa;
-  }
   

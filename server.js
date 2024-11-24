@@ -26,15 +26,11 @@ mongoose
 
 // Routes
 app.get("/", (req, res) => {
-  res.render("index"); // Render the home page
+  res.render("index"); // Render home page
 });
 
-app.get("/milestones", (req, res) => {
-  res.render("milestones"); // Render the milestones page
-});
+app.use("/milestones", require("./routes/milestone-routes")); // Milestones routes
 
 // Start Server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
-
-app.use("/milestones", require("./routes/milestone-routes"));
