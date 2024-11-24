@@ -14,9 +14,3 @@ router.put("/:id", updateMilestone);
 router.delete("/:id", deleteMilestone);
 
 module.exports = router;
-
-
-
-
-
-

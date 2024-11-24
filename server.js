@@ -22,14 +22,14 @@ app.set("view engine", "ejs");
 mongoose
   .connect(process.env.mongo_uri, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log("MongoDB Connected"))
-  .catch((err) => console.error(err));
+  .catch((err) => console.error("Database connection error:", err));
 
 // Routes
 app.use("/milestones", require("./routes/milestone-routes"));
 
 // Home Route
 app.get("/", (req, res) => {
-  res.render("layouts/main", { content: "index" }); // Correctly reference index.ejs
+  res.render("layouts/main", { content: "index" }); // Dynamically include index.ejs
 });
 
 // Start Server
